@@ -112,9 +112,9 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    popular_start_station = df['Start Station'].mode()[0]
+    common_start_station = df['Start Station'].mode()[0]
     
-    print('The popular start station is:' , popular_start_station)
+    print('The popular start station is:' , common_start_station)
     
 
     # TO DO: display most commonly used end station
@@ -148,9 +148,9 @@ def trip_duration_stats(df):
 
 
     # TO DO: display mean travel time
-    average_travel_time = df['Trip Duration'].mean()
+    mean_travel_time = df['Trip Duration'].mean()
     
-    print('Average travel time is' , average_travel_time)
+    print('Average travel time is' , mean_travel_time)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -171,9 +171,9 @@ def user_stats(df):
 
     # TO DO: Display counts of gender
     try:
-        counts_gender = df['Gender'].value_counts()
+        count_of_gender = df['Gender'].value_counts()
     
-        print('Gender count is' , counts_gender)
+        print('Gender count is' , count_of_gender)
     except:
         print('There is no gender column to display in this file')
 
