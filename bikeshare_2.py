@@ -171,9 +171,9 @@ def user_stats(df):
 
     # TO DO: Display counts of gender
     try:
-        counts_gender = df['Gender'].value_counts()
+        count_of_gender = df['Gender'].value_counts()
     
-        print('Gender count is' , counts_gender)
+        print('Gender count is' , count_of_gender)
     except:
         print('There is no gender column to display in this file')
 
